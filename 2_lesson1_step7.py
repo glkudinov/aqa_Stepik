@@ -16,7 +16,7 @@ try:
     browser.find_element(By.ID, "robotsRule").click()
     browser.find_element(By.CSS_SELECTOR, "button.btn").click()
 except Exception as error:
-    print(f"Errors in this scope {errors}")
+    print(f"Errors in this scope {error}")
 finally:
     time.sleep(5)
     browser.quit()
